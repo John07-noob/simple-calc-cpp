@@ -1,3 +1,8 @@
+/*
+Author  : John07-noob
+Date    : Nov/08/2020
+*/
+
 #include <iostream>
 
 int main() {
@@ -11,18 +16,20 @@ while(true){
     std::cout << "3.Multiplication\n";
     std::cout << "4.Division\n";
     std::cout << "Choose The Operation: ";
-    
+
     std::cin >> user_input;
     if (user_input == "1") {
         std::cout << "Insert Number Here: ";
         std::cin >> user_num1;
         if (std::cin.fail()) {
             std::cout << "Invalid Command!\n";
+            break;
         }else{
             std::cout << "Insert Number Here: ";
             std::cin >> user_num2;
             if (std::cin.fail()) {
                 std::cout << "Invalid Command!\n";
+                break;
             }else {
                 result = user_num1 + user_num2;
                 printf("The Result: %d\n", result);
@@ -34,11 +41,13 @@ while(true){
         std::cin >> user_num1;
         if (std::cin.fail()) {
             std::cout << "Invalid Command!\n";
+            break;
         }else {
             std::cout << "Insert Number Here: ";
             std::cin >> user_num2;
             if (std::cin.fail()) {
                 std::cout << "Invalid Command!\n";
+                break;
             }else {
                 result = user_num1 - user_num2;
                 printf("The Result: %d\n", result);
@@ -50,11 +59,13 @@ while(true){
         std::cin >> user_num1;
         if (std::cin.fail()) {
             std::cout << "Invalid Command!\n";
+            break;
         }else {
             std::cout << "Insert Number Here: ";
             std::cin >> user_num2;
             if (std::cin.fail()) {
                 std::cout << "Invalid Command!\n";
+                break;
             }else {
                 result = user_num1 * user_num2;
                 printf("The Result: %d\n", result);
@@ -66,11 +77,13 @@ while(true){
         std::cin >> user_num1;
         if (std::cin.fail()) {
             std::cout << "Invalid Command!\n";
+            break;
         }else {
             std::cout << "Insert Number Here: ";
             std::cin >> user_num2;
             if (std::cin.fail()) {
                 std::cout << "Invalid Command!\n";
+                break;
             }else {
                 result = user_num1 / user_num2;
                 printf("The Result: %d\n", result);
@@ -79,6 +92,6 @@ while(true){
     } else {
         std::cout << "Invalid Command!\n";
     }
-    
+
 }
 }
